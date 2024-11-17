@@ -1,0 +1,112 @@
+/* Styles pour la page de modification de livre */
+body {
+    font-family: 'Merriweather', serif;
+    background: url('form.jpg') no-repeat center center fixed; /* Image de fond */
+    background-size: cover; /* Adapter l'image à l'écran */
+    color: #F5F3E0; /* Blanc cassé */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85); /* Fond semi-transparent pour le contraste */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Titre de la page */
+h1 {
+    font-size: 2.2em;
+    color: #FFD700; /* Couleur dorée pour le titre */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+/* Styles pour le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #E0DFD5; /* Couleur claire pour les labels */
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #FFF; /* Fond blanc pour un bon contraste */
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #007BFF; /* Couleur bleu pour focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+}
+
+/* Boutons */
+button {
+    padding: 10px 20px;
+    background: #007BFF; /* Bleu pour les boutons */
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Liens */
+a {
+    color: #FFD700; /* Doré pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptabilité pour petits écrans */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+}

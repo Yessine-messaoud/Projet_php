@@ -1,0 +1,122 @@
+/* Corps de la page */
+body {
+    font-family: 'Merriweather', serif;
+    background: url('bg2.jpg') no-repeat center center fixed; /* Image de fond */
+    background-size: cover; /* Adapter l'image à l'écran */
+    color: #F5F3E0; /* Blanc cassé */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Conteneur principal */
+.container {
+    background-color: rgba(44, 62, 57, 0.9); /* Semi-transparent pour une ambiance immersive */
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Titres principaux */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: #C2A664; /* Or doux */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Paragraphe */
+p {
+    font-size: 1.2em;
+    color: #F5F3E0;
+}
+
+/* Boutons */
+button {
+    background-color: #C2A664; /* Or doux */
+    color: #2C3E39; /* Texte sombre */
+    font-family: 'Cinzel', serif;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #8C6441; /* Brun bois */
+    color: #F5F3E0; /* Texte clair */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(44, 62, 57, 0.8); /* Semi-transparent */
+    margin: 20px 0;
+    color: #F5F3E0; /* Blanc cassé */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #8C6441; /* Brun bois */
+}
+
+th {
+    background: #8B2323; /* Rouge profond */
+    color: #F5F3E0;
+    font-family: 'Cinzel', serif;
+}
+
+tr:nth-child(even) {
+    background: rgba(194, 166, 100, 0.1); /* Or doux en alternance */
+}
+
+tr:hover {
+    background: rgba(194, 166, 100, 0.3); /* Effet or doux au survol */
+    cursor: pointer;
+}
+
+/* Liens */
+a {
+    color: #C2A664; /* Or doux */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8C6441; /* Brun bois */
+    text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2C3E39;
+    color: #C2A664;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}

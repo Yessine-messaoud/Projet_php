@@ -1,0 +1,113 @@
+/* Style général */
+body {
+    font-family: 'Merriweather', serif;
+    background: url('form.jpg') no-repeat center center fixed; /* Fond de l'image */
+    background-size: cover; /* Adapter l'image à l'écran */
+    margin: 0;
+    padding: 0;
+    color: #F5F3E0; /* Couleur texte : blanc cassé */
+    line-height: 1.6;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85); /* Fond semi-transparent noir */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Ombre pour donner du relief */
+}
+
+/* Titre */
+h1 {
+    font-size: 2.5rem;
+    color: #FFD700; /* Doré pour le titre */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #E0DFD5; /* Couleur claire */
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #FFF;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Effet léger de profondeur */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #FFD700; /* Doré en focus */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Boutons */
+button {
+    padding: 12px 20px;
+    background: #007BFF; /* Bleu pour les boutons */
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #0056b3; /* Bleu plus foncé au survol */
+    transform: scale(1.05); /* Zoom léger */
+}
+
+/* Lien de retour */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #FFD700; /* Doré */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Média Queries pour petits écrans */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

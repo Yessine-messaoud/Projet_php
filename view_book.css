@@ -1,0 +1,89 @@
+/* Styles pour la page de détails d'un livre */
+body {
+    font-family: 'Merriweather', serif;
+    background: url('details.jpg') no-repeat center center fixed; /* Image de fond */
+    background-size: cover; /* Adapter l'image à l'écran */
+    color: #F5F3E0; /* Blanc cassé */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent pour contraster avec l'image */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Titre principal */
+h1 {
+    font-size: 2.5em;
+    color: #FFD700; /* Couleur dorée pour mettre en avant le titre */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+/* Détails du livre */
+.details {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #E0DFD5;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+/* Boutons d'action */
+button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Liens */
+a {
+    color: #FFD700; /* Doré pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptabilité pour les petits écrans */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .details {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+}
